@@ -183,7 +183,29 @@ li:hover {
 /* Section that says if answer was correct or incorrect */
 #createDiv {
     margin-top: 20px;
-    
+    font-size: 20px;
+}
+
+#createDivCorrect {
+    background-color: rgb(206, 242, 206);
+    color: darkgreen;
+    margin-top: 20px;
+    margin-left: 45px;
+    font-size: 20px;
+    border-radius:5px;
+    padding:5px;
+    width: 75%;
+}
+
+#createDivWrong {
+    background-color:#f39898;
+    color: rgb(122, 5, 5);
+    margin-top: 20px;
+    margin-left: 45px;
+    font-size: 20px;
+    border-radius:5px;
+    padding:5px;
+    width: 75%;
 }
 
 

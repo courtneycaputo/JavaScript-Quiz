@@ -26,7 +26,7 @@ var quizQuestions = [
 
     {
         question: "Commonly used data types include:",
-        options: ["Method", "Strings", "Alerts", "Alerts"],
+        options: ["Method", "Strings", "Alerts", "Functions"],
         correctAnswer: "Strings"
     },
 ];
@@ -100,12 +100,14 @@ function compare(event) {
         // Correct condition 
         if (element.textContent == quizQuestions[questionIndex].correctAnswer) {
             score++;
-            createDiv.textContent = "Correct! The answer is:  " + quizQuestions[questionIndex].correctAnswer;
-            // Correct condition 
+            createDiv.setAttribute("id","createDivCorrect"); 
+            createDiv.textContent = "Correct!";
+            
         } else {
             // Will deduct -5 seconds off secondsLeft for wrong answers
             secondsLeft = secondsLeft - penalty;
-            createDiv.textContent = "Incorrect! The correct answer is:  " + quizQuestions[questionIndex].correctAnswer;
+            createDiv.setAttribute("id","createDivWrong");
+            createDiv.textContent = "Incorrect! The correct answer is " + quizQuestions[questionIndex].correctAnswer;
         }
 
     }
