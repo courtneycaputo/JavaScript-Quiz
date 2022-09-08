@@ -97,14 +97,14 @@ function compare(event) {
 
         var createDiv = document.createElement("div");
         createDiv.setAttribute("id", "createDiv");
-        // Correct condition 
+        // Correct answer 
         if (element.textContent == quizQuestions[questionIndex].correctAnswer) {
             score++;
             createDiv.setAttribute("id","createDivCorrect"); 
             createDiv.textContent = "Correct!";
             
         } else {
-            // Will deduct -5 seconds off secondsLeft for wrong answers
+            // Will deduct -10 seconds off secondsLeft for wrong answers
             secondsLeft = secondsLeft - penalty;
             createDiv.setAttribute("id","createDivWrong");
             createDiv.textContent = "Incorrect! The correct answer is " + quizQuestions[questionIndex].correctAnswer;
@@ -119,7 +119,7 @@ function compare(event) {
         // All done will append last page with user stats
         complete();
         createDiv.setAttribute("id","createDiv");
-        createDiv.textContent = "Your score is  " + score + " out of " + quizQuestions.length;
+        createDiv.textContent = "You answered " + score + " out of " + quizQuestions.length + " questions correctly!";
     } else {
         render(questionIndex);
     }

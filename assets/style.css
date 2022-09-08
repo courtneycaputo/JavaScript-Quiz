@@ -66,24 +66,21 @@ a:hover {
     background-color: var(--contrast);
 }
 
-
 #questionsDiv {
     margin-top: 50px;
     margin-left: 25px;
     margin-right:25px;
     font-size: 25px;
     text-align:center;
-    
 }
 
 #currentTime {
-    text-align: center;
+    float:right;
     margin-top: 20px;
     margin-left:100px;
     border-bottom: 0px solid var(--dark);
     width: 300px;
     align-content: center;
-    /* background-color:var(--medium); */
     padding:5px;
     border-radius: 80px;
     color:var(--dark);
@@ -99,7 +96,7 @@ a:hover {
     color: var(--tan);
     width: auto;
     margin-right:50px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 0px;
 }
 
@@ -114,7 +111,7 @@ a:hover {
     font-size: 20px;
     color: var(--tan);
     margin-left:50px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 0px;
 }
 
@@ -133,7 +130,8 @@ textarea {
     padding: 15px 32px;
     font-size: 20px;
     color: var(--tan);
-    border-radius: 20px;
+    border-radius: 10px;
+    border:0px;
 }
 
 label {
