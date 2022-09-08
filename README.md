@@ -26,5 +26,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Acknowledgements
 JavaScript help from: 
-*<a href="https://heroic-cupcake-9c46a0.netlify.app/">Coding with Corgis</a>
+* <a href="https://heroic-cupcake-9c46a0.netlify.app/">Coding with Corgis</a>
 * <a href="https://www.codingnepalweb.com/">CodingNepal</a>
