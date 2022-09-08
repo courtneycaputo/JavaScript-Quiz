@@ -20,8 +20,14 @@ var quizQuestions = [
 
     {
         question: "Which of the following is a logical operator?",
-        options: ["!", "||", "&&", "all of the above"],
-        correctAnswer: "all of the above"
+        options: ["!", "||", "&&", "All Of The Above"],
+        correctAnswer: "All Of The Above"
+    },
+
+    {
+        question: "Commonly used data types include:",
+        options: ["Method", "Strings", "Alerts", "Alerts"],
+        correctAnswer: "Strings"
     },
 ];
 
@@ -35,7 +41,7 @@ var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
 // Seconds left is 15 seconds per question:
-var secondsLeft = 91;
+var secondsLeft = 101;
 // Holds interval time
 var holdInterval = 0;
 // Holds penalty time
@@ -49,7 +55,7 @@ timer.addEventListener("click", function () {
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
             secondsLeft--;
-            currentTime.textContent = "Time: " + secondsLeft;
+            currentTime.textContent = "Time Left: " + secondsLeft;
 
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);

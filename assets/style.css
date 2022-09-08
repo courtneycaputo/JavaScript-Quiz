@@ -1,17 +1,45 @@
 
 :root {
     --tan:#F1FAEE;
-    --red:#E63946;
+    --contrast:#e639a9;
     --light:#A8DADC;
     --medium:#457B9D;
     --dark:#1D3557;
 }
 
+::selection {
+    background-color: var(--tan);
+    color: var(--dark);
+}
+
 body{
     background-color: var(--tan);
     font-family:Arial, Helvetica, sans-serif;
-    /* text-align:center; */
     }
+
+/* High Scores */
+#highscore-page {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius:30px;
+}
+
+/* Link to go to high scores page */
+a {
+   text-decoration: none;
+   color: var(--tan);
+   background: var(--dark);
+   padding:10px;
+   margin-top: 20px;
+}
+
+a:hover {
+   text-decoration: none;
+   background: var(--contrast);
+   
+}
+
 
 #wrapper {
     position: absolute;
@@ -20,23 +48,27 @@ body{
     width: 500px;
     height: 500px;
     border: 0px solid black;
-    border-radius:80px;
+    border-radius:20px;
     background-color: var(--light);
 }
 
 #startQuiz {
     background-color: var(--dark);
-    margin-left: 33%;
     padding: 15px 32px;
     font-size: 20px;
     color: var(--tan);
-    border-radius: 80px;
+    border-radius: 5px;
+    border: 0px;
     
+}
+
+#startQuiz:hover {
+    background-color: var(--contrast);
 }
 
 
 #questionsDiv {
-    margin-top: ;
+    margin-top: 50px;
     margin-left: 25px;
     margin-right:25px;
     font-size: 25px;
@@ -67,7 +99,7 @@ body{
     color: var(--tan);
     width: auto;
     margin-right:50px;
-    border-radius: 80px;
+    border-radius: 20px;
     
 }
 
@@ -78,7 +110,7 @@ body{
     font-size: 20px;
     color: var(--tan);
     margin-left:50px;
-    border-radius: 80px;
+    border-radius: 20px;
     
 }
 
@@ -95,7 +127,7 @@ textarea {
     padding: 15px 32px;
     font-size: 20px;
     color: var(--tan);
-    border-radius: 80px;
+    border-radius: 20px;
 }
 
 label {
@@ -121,7 +153,7 @@ h1 {
 /* text at beginning that explains quiz */
 p {
     font-size: 20px;
-    text-align: left;
+    text-align: justify;
 }
 
 /* text for final score */
@@ -145,7 +177,7 @@ li {
 }
 
 li:hover {
-    background-color:var(--medium);
+    background-color:var(--contrast);
 }
 
 /* Section that says if answer was correct or incorrect */
@@ -154,19 +186,6 @@ li:hover {
     
 }
 
-#highscores-page{
-    margin-top:20px;
-}
-
-/* Link to go to high scores page */
-a {
-   text-decoration: none;
-   color: var(--dark);
-   background: var(--light);
-   padding:10px;
-   border-radius:80px;
-   margin-top: 10px;
-}
 
 /* Media Queries Below */
 
