@@ -118,7 +118,8 @@ function compare(event) {
     if (questionIndex >= quizQuestions.length) {
         // All done will append last page with user stats
         complete();
-        createDiv.textContent = "End of quiz!" + " " + "You got  " + score + "/" + quizQuestions.length + " Correct!";
+        createDiv.setAttribute("id","createDiv");
+        createDiv.textContent = "Your score is  " + score + " out of " + quizQuestions.length;
     } else {
         render(questionIndex);
     }

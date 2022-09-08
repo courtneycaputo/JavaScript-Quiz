@@ -100,7 +100,11 @@ a:hover {
     width: auto;
     margin-right:50px;
     border-radius: 20px;
-    
+    border: 0px;
+}
+
+#goBack:hover {
+    background-color:var(--contrast);
 }
 
 #clear {
@@ -111,10 +115,12 @@ a:hover {
     color: var(--tan);
     margin-left:50px;
     border-radius: 20px;
-    
+    border: 0px;
 }
 
-
+#clear:hover {
+    background-color:var(--contrast);
+}
 
 textarea {
     width: 90%;
@@ -141,7 +147,7 @@ input {
     height: 20px;
     border: 1px solid var(--dark);
     background: var(--tan);
-   
+    
 }
 
 /* Heading "JavaScript Quiz" */
